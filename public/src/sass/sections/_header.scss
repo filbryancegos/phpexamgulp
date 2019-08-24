@@ -1,0 +1,52 @@
+
+header {padding: 20px;}
+
+body.fixed-nav header {
+    position: fixed;
+}
+
+header {
+    background: $white;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.brand-logo {
+    @extend .logo;
+}
+nav ul {
+    li { 
+        padding: 10px;
+        text-transform: uppercase;
+        
+        a {
+            position: relative;
+            color: $black-2;
+            font-size: 15px;
+            cursor: pointer;
+            
+            &::after {
+                content: '';
+                background: $yellow;
+                height: 2px;
+                width: 100%;
+                position:absolute;
+                left: 0;
+                bottom: -15px;
+                width: 0;
+                transition: .2s;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+                color: $yellow;
+                text-decoration: none;
+            }
+        }
+        
+    }
+}

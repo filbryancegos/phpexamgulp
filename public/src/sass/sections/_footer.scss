@@ -1,0 +1,43 @@
+#footer-bg {
+    padding: 10rem 0;
+    background: $black-3;
+    color: $white;
+    .footer-nav li {
+        padding: 1rem;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: .2rem;
+        a {
+            cursor: pointer;
+        }
+    }
+    .footer-logo {
+        position: relative;
+        @extend .logo;
+        @extend .line;
+        &::before {
+            bottom: -30px;
+            left: -40px;
+        }
+    }
+}
+
+.copyright {
+    background: $black-2;
+    padding: 1rem 0;
+    p { color:$white;}
+}
+
+@media (max-width: 767.98px) { 
+
+    #footer-bg {
+        padding: 5rem 0;
+        .footer-nav {
+            display: block !important;
+            text-align: center;
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+ }

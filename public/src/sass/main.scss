@@ -1,0 +1,48 @@
+/*import  fonts here*/
+// $fa-font-path: "~font-awesome/fonts";
+// @import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+
+/*load abstract*/
+@import 'abstract/variables';
+
+/*load vendor*/
+@import 'vendor/bootstrap.scss';
+
+
+
+/*load animate*/
+@import 'animate/animate';
+
+/*load mixins*/
+@import 'mixins/mixins_general';
+@import 'mixins/mixins_breakpoints';
+
+/*load components*/
+@import 'components/extend';
+//@import 'components/slide';
+
+/*load base*/
+@import 'base/utilities';
+@import 'base/typography';
+
+/*load responsive*/
+@import 'responsive/media';
+
+
+
+/*load pages*/
+
+
+/*load sections*/
+@import 'sections/header';
+@import 'sections/pages';
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/contact';
+@import 'sections/footer';
